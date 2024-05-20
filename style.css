@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+.image-carousel {
+  position: relative;
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  margin-top: 50px;
+}
+.image-frame {
+  width: 800px;
+  height: 650px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.image-panel img {
+  width: 1000px;
+  max-width: 1000px;
+  min-width: 1000px;
+  height: 650px;
+  margin: auto;
+  /* display: none;*/
+}
+
+.image-panel {
+  left: 0;
+  top: o;
+  position: absolute;
+  display: flex;
+}
+.arrow-container {
+  height: 650px;
+  background: black;
+  opacity: 50%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow {
+  background: black;
+  border: 0;
+}
+
+.arrow img {
+  height: 50px;
+}
+.arrow img {
+  opacity: 1;
+  height: 60px;
+}
+
+.progress-indicator {
+  background: black;
+  opacity: 80%;
+  width: fit-content;
+  padding: 0px 20px;
+  border-radius: 10px;
+  height: 30px;
+  margin: auto;
+  margin-top: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.progress-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgb(165, 165, 165);
+}
+.hidden {
+  opacity: 0;
+}
+.progress-circle.selected {
+  background: white;
+}
